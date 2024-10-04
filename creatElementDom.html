@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>creat element</title>
+</head>
+<body style="background-color: rgb(8, 80, 80);color: aquamarine;">
+    
+</body>
+<script>
+        const h3 = document.createElement("h3")
+        console.log(h3);
+        h3.className = "name"
+        h3.id = Math.round(Math.random() * 10 + 1);
+        h3.setAttribute("tittle", "creat element");
+        h3.style.color="yellow"
+        h3.style.backgroundColor="gray"
+        h3.style.padding = "30px";
+        h3.style.fontSize="50px";
+        h3.style.borderRadius= "50%";
+        h3.style.textAlign="center";
+        h3.innerText="Munawar Aziz";
+        // const addtext = document.createTextNode("Usama Khan");
+        // h3.appendChild(addtext);
+        document.body.appendChild(h3);
+
+
+        const p = document.createElement("p")
+        console.log(p);
+        const addtext = document.createTextNode(" Writing experts recommend paragraphs of no more than 150 words in three to eight sentences. Paragraphs should never be longer than 250 words. Vary the lengths of your paragraphs to make them more interesting. As with sentence length, if all paragraphs are the same size your writing will be choppy.");
+        p.appendChild(addtext);
+        p.style.color="gray";
+        document.body.appendChild(p)
+
+        const secondP = document.createElement("p")
+        const text = document.createTextNode("All of above is created by java script . DOM is intrusting gain more and more s")
+        secondP.appendChild(text);
+        secondP.style.backgroundColor="pink"
+        secondP.style.color="black"
+        secondP.style.padding="20px"
+        secondP.style.marginLeft="10%"
+        secondP.style.marginRight="10%"
+        document.body.appendChild(secondP)
+</script>
+</html> 
