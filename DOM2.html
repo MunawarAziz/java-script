@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Dom</title>
+</head>
+<body style="background-color: black; color: darkgrey;">
+
+    <ul class="room">
+        <li>Table</li>
+    </ul>
+    
+</body>
+<script>
+    function addthings(nam){
+    const li = document.createElement("li")
+    li.appendChild(document.createTextNode(nam))
+    document.querySelector(".room").appendChild(li)
+
+    }
+    addthings("Door")
+    addthings("window")
+    const replace = document.querySelector("li:nth-child(1)")
+    const newli = document.createElement("li")
+    newli.textContent= "Glass"
+    replace.replaceWith(newli)
+
+    console.log(typeof null);
+    
+
+</script>
+</html>
