@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mini project</title>
+</head>
+<body>
+    <h1>Time interval</h1>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+  
+</body>
+<script>
+   
+         const start=  document.querySelector("#start").addEventListener("click",
+         function(str){
+          console.log(str, new Date(), "</br>");
+     
+
+          const clear =    setInterval (start, 1000,"helo");
+
+        })
+        
+         const stop = document.querySelector("#stop").addEventListener("click",function(){
+            clearInterval(clear);
+         })
+        // setInterval(date, 3000)
+   
+</script>
+</html>
