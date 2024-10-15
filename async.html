@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>async</title>
+</head>
+<body>
+    <h1>Munawar Aziz</h1>
+    <button id="stop">stop</button>
+</body>
+ <script>
+    // setTimeout(function(){
+    //     console.log("Munna")
+    // },3000)
+   
+    
+    const sayMunna = function(){
+      alert("Munna your setTimeOut is working ")
+    }
+     const newname  =  function(){
+      document.querySelector("h1").innerHTML = "Munna over write"
+
+     }
+
+    
+     const change = setTimeout(newname , 2000)
+     setTimeout(sayMunna , 5000);
+
+     document.querySelector("#stop").
+     addEventListener("click", function(){
+      clearTimeout(change);
+      console.log("Time out is stoped")
+     })   
+
+ </script>
+</html>
